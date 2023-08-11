@@ -27,10 +27,11 @@
 
 |method|url|설명|request|response|
 |------|---|---|---|---|
-|post|/member/join|회원가입|MemberDTO|String(회원가입완료안내)|
+|post|/member/join|회원가입|MemberDTO|String<br/>(회원가입완료안내)|
 |post|/member/login|로그인|MemberDTO|TokenInfo|
 |post|/board/writeArticle|게시글작성|ArticleDTO|ArticleDTO|
-|get|/board/articleList/{page}|게시글목록|int reqCnt(페이지당 글 수)|List\<ArticleDTO\>|
+|get|/board/articleList/{page}|게시글목록|int reqCnt<br/>(페이지당 글 수)|List\<ArticleDTO\>|
 |get|/board/searchArticle/{num}|게시글조회|int num(글번호)|ArticleDTO|
-|put|/board/modifyArticle/{num}|게시글수정|int num(글번호), String content(수정내용)|ArticleDTO|
-|delete|/board/removeArticle/{num}|게시글삭제|int num(글번호)|String message(삭제완료안내)|
+|put|/board/modifyArticle/{num}|게시글수정|int num(글번호),<br/>String content(수정내용)|ArticleDTO|
+|delete|/board/removeArticle/{num}|게시글삭제|int num(글번호)|String message<br/>(삭제완료안내)|
+
